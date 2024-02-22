@@ -1,0 +1,49 @@
+.about-area{
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.about-area .about-desc{
+    width: 512px; 
+    color: white; 
+    font-size: 20px; 
+     font-weight: 500; 
+    line-height: 30px;
+     word-wrap: break-word;
+     margin: 0;
+}
+
+.abt-big-desc{
+    width: 880px; 
+    color: white; 
+    font-size: 16px; 
+     font-weight: 400;
+     line-height: 30px; 
+    word-wrap: break-word
+}
+
+.contact{
+    color: white;
+     font-size: 24px;
+    
+      font-weight: 600;
+       line-height: 30px;
+        word-wrap: break-word;
+}
+
+.link-area{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.link-direct{
+    color: white; 
+    font-size: 40px; 
+     font-weight: 600; 
+    line-height: 30px; 
+    word-wrap: break-word;
+}

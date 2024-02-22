@@ -1,0 +1,51 @@
+.pro-area {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pro-area .left-text {
+    color: white;
+
+}
+
+.left-sub-text {
+    width: 500px;
+}
+
+.pro-area .right-sub-text {
+    color: white;
+}
+
+.right-sub-text .right-sub1 {
+    width: 139px;
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+    word-wrap: break-word;
+    margin: 0;
+}
+
+.project-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pjt-desc {
+    width: 723px;
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+    word-wrap: break-word;
+}
+
+.pjt-link{
+    color: white;
+}
+
+.pjt-link a{
+    color: white;
+    text-decoration: underline;
+}
