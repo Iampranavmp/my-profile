@@ -1,5 +1,12 @@
 @media only screen and (max-width: 600px) {
-    .container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
+
+    .container,
+    .container-fluid,
+    .container-xxl,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm {
         width: auto !important;
     }
 
@@ -7,45 +14,113 @@
         width: 100%;
         padding: 0%;
     }
-    .description-text{
+
+    .description-text {
         width: 100%;
     }
+
     .footer-details {
         display: flex;
         flex-direction: column;
-      }
-      .footer-details :nth-child(1) { order: 2; }
-      .footer-details :nth-child(2) { order: 1; }
-      .footer-details :nth-child(3) { order: 3; }
-     
-      .links {
+        gap: 18px;
+    }
+
+    .footer-details :nth-child(1) {
+        order: 2;
+    }
+
+    .footer-details :nth-child(2) {
+        order: 1;
+    }
+
+    .footer-details :nth-child(3) {
+        order: 3;
+    }
+
+    .links {
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-around;
         align-items: center;
         gap: 10px;
-      }
-      .log-half{
-        
-            display: flex;
-            justify-content: center;
-        
-      }
-      .copyright h6{
+    }
+
+    .log-half {
+
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .copyright h6 {
         text-align: center;
-      }
-      .hamburger{
+    }
+
+    .hamburger {
         display: block;
-      }
-    .nav-links{
+    }
+
+    .nav-links {
         display: none;
     }
+
     nav {
         flex-direction: row;
         align-items: center;
-      }
-    
-      /* nav a {
+
+        padding: 24px 0px;
+    }
+
+    /* nav a {
         margin: 10px 0;
       } */
+
+    .offcanvas-body {
+        background: #050609;
+        ;
+    }
+
+    .offcanvas-header {
+        background: #050609;
+    }
+
+    .offcanvas-title {
+        color: white;
+    }
+
+    .nav-links2 {
+        list-style: none;
+        color: white;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    .nav-links2 li a {
+        margin: 0;
+    }
+
+    .nav-links2 li {
+        padding-bottom: 24px;
+    }
+
+
+    /* project-page */
+
+    .pro-area{
+        flex-direction: column;
+
+    }
+    .left-sub-text{
+        width: 100% !important;
+    }
+    .project-image img{
+        width: 100%;
+    }
+    .pjt-desc{
+        width: 100% !important;
+    }
 }
