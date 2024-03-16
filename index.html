@@ -21,16 +21,28 @@
 <!-- fancybox css -->
 <link rel="stylesheet" href="css/plugins/fancybox.min.css">
 <!-- ashley scss -->
-
+<script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
 <!-- <body oncontextmenu="return false"> -->
-
+<style>
+    .data{
+  font-family: Poppins;
+  color: #fff;
+  font-size: 30px;
+  letter-spacing: 12px;
+  font-weight:600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+    </style>
     <body >
 
     <!--navbar-->
     <div class="container">
         <nav>
             <div>
-                <a href="#" class="logo">Pranav.</a>
+                <a href="#" class="logo data">Pranav.</a>
             </div>
             <div class="nav-links">
                 <a href="#about">About</a>
@@ -55,7 +67,7 @@
                 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
                     aria-labelledby="offcanvasExampleLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Pranav.</h5>
+                        <h5 class="offcanvas-title data" id="offcanvasExampleLabel">Pranav.</h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
@@ -364,5 +376,13 @@
     }
 };
 </script> -->
-
+<script>
+    const text=baffle(".data");
+    text.set({
+      characters : '█<▓ ░█▒█▒ ░▒/░█ ▓▒▓ █/██▒ █▓█/ █▒█ ░█▒█ ▓░█▒',
+      speed: 120
+    });
+    text.start();
+    text.reveal(4000);
+  </script>
 </html>
