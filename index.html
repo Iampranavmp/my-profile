@@ -24,340 +24,255 @@
 <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
 <!-- <body oncontextmenu="return false"> -->
 <style>
-    .data{
-  font-family: Poppins;
-  color: #fff;
-  font-size: 30px;
-  letter-spacing: 12px;
-  font-weight:600;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-    </style>
-    <body >
 
-    <!--navbar-->
-    <div class="container">
-        <nav>
-            <div>
-                <a href="#" class="logo data">Pranav.</a>
-            </div>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#resume">Projects</a>
-                <a href="#resume">Resume</a>
-                <a href="#resume" class="chip">Contact</a>
+</style>
 
-            </div>
-            <div class="hamburger">
-                <a class="btn " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                    aria-controls="offcanvasExample">
-                    <i><svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" id="fi_9824151">
-                            <clipPath id="clip0_17_18755">
-                                <path d="m0 0h24v24h-24z"></path>
-                            </clipPath>
-                            <g clip-path="url(#clip0_17_18755)">
-                                <path d="m4 9h16v2h-16zm0 4h10v2h-10z" fill="white" ></path>
-                            </g>
-                        </svg></i>
-                </a>
-                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-                    aria-labelledby="offcanvasExampleLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title data" id="offcanvasExampleLabel">Pranav.</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="nav-links2">
-                            <li>
-                                <a href="#">about</a>
-                            </li>
-                            <li>
-                                <a href="#">Project</a>
-                            </li>
-                            <li><a href="#"> Resume</a>
-                            </li>
-                            <li><a href="#" class="chip">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-        </nav>
-    </div>
-
-    <!-- <nav class="navbar navbar-expand-lg">
+<body>
+    <div id="progressBar"></div>
+    <div id="progressBarContainer"></div>
+        
+        <!--navbar-->
         <div class="container">
-            <a class="navbar-brand" href="#">Pranav.</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto"> 
-                    <a class="nav-link" href="#">About</a>
-                    <a class="nav-link" href="#">Resume</a>
+            <nav>
+                <div>
+                    <a href="#" class="logo data">Pranav.</a>
                 </div>
-            </div>
-        </div>
-    </nav>
-     -->
-    <!--navbar-end-->
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#resume">Projects</a>
+                    <a href="#resume">Resume</a>
+                    <a href="#resume" class="chip">Contact</a>
 
-    <!--hero-section-->
-
-    <div class="container">
-        <div class="hero-area">
-            <p id="shuffling-text"> Hi there! I'm <span> Pranav MP</span>, your UI/UX maestro with 2 years of design
-                wizardry. Let's weave
-                digital wonders together, creating seamless and unforgettable user experiences.</p>
-        </div>
-    </div>
-
-    <!--hero-section-ends-->
-
-
-    <!--video-section-->
-
-
-    <div class="video-area">
-        <video autoplay loop muted>
-            <source src="assets/black.mp4" type="video/mp4"> <!-- Replace with your video source -->
-            Your browser does not support the video tag.
-        </video>
-    </div>
-
-    <!--video-area-ends-->
-
-
-    <!--project-area-->
-    <div class="container">
-
-        <div class="project-section">
-            <h6 class="head">
-                Recent Works
-            </h6>
-            <hr>
-
-            <div class="project-document-area">
-                <div class="row">
-                    <div class="col-md-7 mb-50">
-                        <div class="document-area1">
-                            <img src="/assets/BG1.png" alt="" style="width: 100%;">
-                            <div class="pdt-text">
-                                <h6 class="year">2024</h6>
-                                <h5 class="project-head">Nextlevel 4x4</h5>
-                                <p class="description-text">Designing a mobile app for a 4x4 vehicle trip planner
-                                    involves creating an intuitive
-                                    interface with easy access to essential features.</p>
-                                <p class="bottom-text">Mobile App Design UI UX</p>
-                            </div>
+                </div>
+                <div class="hamburger">
+                    <a class="btn " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample">
+                        <i><svg fill="none" height="24" viewBox="0 0 24 24" width="24"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                id="fi_9824151">
+                                <clipPath id="clip0_17_18755">
+                                    <path d="m0 0h24v24h-24z"></path>
+                                </clipPath>
+                                <g clip-path="url(#clip0_17_18755)">
+                                    <path d="m4 9h16v2h-16zm0 4h10v2h-10z" fill="white"></path>
+                                </g>
+                            </svg></i>
+                    </a>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title data" id="offcanvasExampleLabel">Pranav.</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
                         </div>
-
-
-                    </div>
-                    <div class="col-md-5">
-                        <div class="document-area2">
-                            <img src="assets/sm1.png" alt="" style="width: 100%;">
-                            <div class="pdt-text">
-                                <h6 class="year">2024</h6>
-                                <h5 class="project-head">Nextlevel 4x4</h5>
-                                <p class="description-text">Designing a mobile app for a 4x4 vehicle trip planner
-                                    involves creating an intuitive
-                                    interface with easy access to essential features.</p>
-                                <p class="bottom-text">Mobile App Design UI UX</p>
-                            </div>
+                        <div class="offcanvas-body">
+                            <ul class="nav-links2">
+                                <li>
+                                    <a href="#">about</a>
+                                </li>
+                                <li>
+                                    <a href="#">Project</a>
+                                </li>
+                                <li><a href="#"> Resume</a>
+                                </li>
+                                <li><a href="#" class="chip">Contact</a></li>
+                            </ul>
                         </div>
-
                     </div>
-
-                    <div class="col-md-5" style="padding-top: 40px;">
-                        <div class="document-area1">
-                            <img src="assets/sn2.png" alt="" style="width: 100%;">
-                            <div class="pdt-text">
-                                <h6 class="year">2024</h6>
-                                <h5 class="project-head">Nextlevel 4x4</h5>
-                                <p class="description-text">Designing a mobile app for a 4x4 vehicle trip planner
-                                    involves creating an intuitive
-                                    interface with easy access to essential features.</p>
-                                <p class="bottom-text">Mobile App Design UI UX</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-md-7" style="padding-top: 40px;">
-                        <div class="document-area2">
-                            <img src="/assets/BG2.png" alt="" style="width: 100%;">
-                            <div class="pdt-text">
-                                <h6 class="year">2024</h6>
-                                <h5 class="project-head">Nextlevel 4x4</h5>
-                                <p class="description-text">Designing a mobile app for a 4x4 vehicle trip planner
-                                    involves creating an intuitive
-                                    interface with easy access to essential features.</p>
-                                <p class="bottom-text">Mobile App Design UI UX</p>
-                            </div>
-                        </div>
-
-
-                    </div>
-
                 </div>
-            </div>
 
+
+
+
+
+            </nav>
         </div>
 
+        
 
+        <!--hero-section-->
 
-    </div>
-    <!--project-area-ends-->
-
-    <!--2 column mockup area-->
-    <!-- <div class="container">
-        <div class="mockup-area">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="assets/mock1.png" alt="" style="width: 100%;">
-                    <div class="mck-text">
-                        <h6 class="mck-head">
-                            Nextlevel
-                        </h6>
-                        <p class="mck-para">Your browser does not support the video tag.</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <img src="assets/mock1.png" alt="" style="width: 100%;">
-                    <div class="mck-text">
-                        <h6 class="mck-head">
-                            Nextlevel
-                        </h6>
-                        <p class="mck-para">Your browser does not support the video tag.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- 2 column mockup area ends-->
-
-    <!--3 column mockup area-->
-
-    <!-- <div class="container">
-        <div class="three-mck-area">
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="assets/mck2.png" alt="" width="100%">
-                    <div class="mck-text">
-                        <h6 class="mck-head">
-                            Nextlevel
-                        </h6>
-                        <p class="mck-para">Your browser does not support the video tag.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <img src="assets/mck2.png" alt="" width="100%">
-                    <div class="mck-text">
-                        <h6 class="mck-head">
-                            Nextlevel
-                        </h6>
-                        <p class="mck-para">Your browser does not support the video tag.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <img src="assets/mck2.png" alt="" width="100%">
-                    <div class="mck-text">
-                        <h6 class="mck-head">
-                            Nextlevel
-                        </h6>
-                        <p class="mck-para">Your browser does not support the video tag.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <!--3 column mock up area ends-->
-
-
-    <!--above-footer-area -->
-
-    <div class="container">
-        <div class="above-footer">
-            <h5 class="abvf-head">
-                Thanks for visiting.
-            </h5>
-            <p class="abvf-head">
-                Stay Awesome.
-            </p>
-            <img src="/assets/phalf1.png" alt="">
-        </div>
-    </div>
-    <!--above-footer-area-ends -->
-
-    <!--footer-->
-
-    <footer class="black-footer">
         <div class="container">
-            <div class="footer-details">
-                <div class="copyright">
-                    <h6>
-                        © 2024 Pranav M P
-                    </h6>
+            <div class="hero-area">
+                <p id="shuffling-text"> Hi there! I'm <span> Pranav MP</span>, your UI/UX maestro with 2 years of design
+                    wizardry. Let's weave
+                    digital wonders together, creating seamless and unforgettable user experiences.</p>
+            </div>
+        </div>
 
+        <!--hero-section-ends-->
+
+
+        <!--video-section-->
+
+
+        <div class="video-area">
+            <video autoplay loop muted>
+                <source src="assets/black.mp4" type="video/mp4"> <!-- Replace with your video source -->
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!--video-area-ends-->
+
+
+        <!--project-area-->
+        <div class="container">
+
+            <div class="project-section">
+                <h6 class="head">
+                    Recent Works
+                </h6>
+                <hr>
+
+                <div class="project-document-area">
+                    <div class="row">
+                        <div class="col-md-7 mb-50">
+                            <div class="document-area1">
+                                <img src="/assets/BG1.png" alt="" style="width: 100%;">
+                                <div class="pdt-text">
+                                    <h6 class="year">2024</h6>
+                                    <h5 class="project-head">Nextlevel 4x4</h5>
+                                    <p class="description-text">Designing a mobile app for a 4x4 vehicle trip planner
+                                        involves creating an intuitive
+                                        interface with easy access to essential features.</p>
+                                    <p class="bottom-text">Mobile App Design UI UX</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-5">
+                            <div class="document-area2">
+                                <img src="assets/sm1.png" alt="" style="width: 100%;">
+                                <div class="pdt-text">
+                                    <h6 class="year">2024</h6>
+                                    <h5 class="project-head">Nextlevel 4x4</h5>
+                                    <p class="description-text">Designing a mobile app for a 4x4 vehicle trip planner
+                                        involves creating an intuitive
+                                        interface with easy access to essential features.</p>
+                                    <p class="bottom-text">Mobile App Design UI UX</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-5" style="padding-top: 40px;">
+                            <div class="document-area1">
+                                <img src="assets/sn2.png" alt="" style="width: 100%;">
+                                <div class="pdt-text">
+                                    <h6 class="year">2024</h6>
+                                    <h5 class="project-head">Nextlevel 4x4</h5>
+                                    <p class="description-text">Designing a mobile app for a 4x4 vehicle trip planner
+                                        involves creating an intuitive
+                                        interface with easy access to essential features.</p>
+                                    <p class="bottom-text">Mobile App Design UI UX</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-7" style="padding-top: 40px;">
+                            <div class="document-area2">
+                                <img src="/assets/BG2.png" alt="" style="width: 100%;">
+                                <div class="pdt-text">
+                                    <h6 class="year">2024</h6>
+                                    <h5 class="project-head">Nextlevel 4x4</h5>
+                                    <p class="description-text">Designing a mobile app for a 4x4 vehicle trip planner
+                                        involves creating an intuitive
+                                        interface with easy access to essential features.</p>
+                                    <p class="bottom-text">Mobile App Design UI UX</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
                 </div>
-                <div class="log-half">
-                    <img src="/assets/phalf2.png" alt="">
-                </div>
-                <div class="links">
-                    <div class="folow-text">
+
+            </div>
+
+
+
+        </div>
+        <!--project-area-ends-->
+
+
+        <!--above-footer-area -->
+
+        <div class="container">
+            <div class="above-footer">
+                <h5 class="abvf-head">
+                    Thanks for visiting.
+                </h5>
+                <p class="abvf-head">
+                    Stay Awesome.
+                </p>
+                <img src="/assets/phalf1.png" alt="">
+            </div>
+        </div>
+        <!--above-footer-area-ends -->
+
+        <!--footer-->
+
+        <footer class="black-footer">
+            <div class="container">
+                <div class="footer-details">
+                    <div class="copyright">
                         <h6>
-                            Follow me on
+                            © 2024 Pranav M P
                         </h6>
-                    </div>
 
-                    <div class="icons">
-                        <img src="assets/instagram.png" alt="">
-                        <img src="assets/linkedin.png" alt="">
-                        <img src="assets/behance.png" alt="">
                     </div>
+                    <div class="log-half">
+                        <img src="/assets/phalf2.png" alt="">
+                    </div>
+                    <div class="links">
+                        <div class="folow-text">
+                            <h6>
+                                Follow me on
+                            </h6>
+                        </div>
 
+                        <div class="icons">
+                            <img src="assets/instagram.png" alt="">
+                            <img src="assets/linkedin.png" alt="">
+                            <img src="assets/behance.png" alt="">
+                        </div>
+
+                    </div>
                 </div>
+
             </div>
 
-        </div>
-
-    </footer>
+        </footer>
 
 
 
-    <!--footer-ends-->
+        <!--footer-ends-->
 
-</body>
+    </body>
 
 
-<script src="js/main.js"></script>
-<script src="js/plugins/jquery.min.js"></script>
-<!-- swup js -->
-<script src="js/plugins/swup.min.js"></script>
-<!-- swiper js -->
-<script src="js/plugins/swiper.min.js"></script>
-<!-- fancybox js -->
-<script src="js/plugins/fancybox.min.js"></script>
-<!-- gsap js -->
-<script src="js/plugins/gsap.min.js"></script>
-<!-- scroll smoother -->
-<script src="js/plugins/smooth-scroll.js"></script>
-<!-- scroll trigger js -->
-<script src="js/plugins/ScrollTrigger.min.js"></script>
-<!-- scroll to js -->
-<script src="js/plugins/ScrollTo.min.js"></script>
-<script src="https://unpkg.com/gsap@3.9.2/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- <script>
+    <script src="js/main.js"></script>
+    <script src="js/plugins/jquery.min.js"></script>
+    <!-- swup js -->
+    <script src="js/plugins/swup.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/plugins/swiper.min.js"></script>
+    <!-- fancybox js -->
+    <script src="js/plugins/fancybox.min.js"></script>
+    <!-- gsap js -->
+    <script src="js/plugins/gsap.min.js"></script>
+    <!-- scroll smoother -->
+    <script src="js/plugins/smooth-scroll.js"></script>
+    <!-- scroll trigger js -->
+    <script src="js/plugins/ScrollTrigger.min.js"></script>
+    <!-- scroll to js -->
+    <script src="js/plugins/ScrollTo.min.js"></script>
+    <script src="https://unpkg.com/gsap@3.9.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script>
     document.onkeydown = (e) => {
     if (e.key == 123) {
         e.preventDefault();
@@ -376,13 +291,14 @@
     }
 };
 </script> -->
-<script>
-    const text=baffle(".data");
-    text.set({
-      characters : '█<▓ ░█▒█▒ ░▒/░█ ▓▒▓ █/██▒ █▓█/ █▒█ ░█▒█ ▓░█▒',
-      speed: 120
-    });
-    text.start();
-    text.reveal(4000);
-  </script>
+    <script>
+        const text = baffle(".data");
+        text.set({
+            characters: '█<▓ ░█▒█▒ ░▒/░█ ▓▒▓ █/██▒ █▓█/ █▒█ ░█▒█ ▓░█▒',
+            speed: 120
+        });
+        text.start();
+        text.reveal(4000);
+    </script>
+
 </html>
