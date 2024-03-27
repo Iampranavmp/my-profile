@@ -1,13 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Space+Grotesk:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
 body {
-  font-family: satoshi;
+  font-family: "Oxygen", sans-serif !important;
+  font-optical-sizing: auto;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: #050609 !important;
+  background-color: #050609 !important;
+  background-image:
+      linear-gradient(to right, rgba(34, 34, 34, 0.322) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(160, 160, 160, 0.02) 1px, transparent 1px);
+  background-size: 20px 20px; 
+  z-index: -1;
+
 }
 
+
+
 nav {
-  background-color: #050609;
+  /* background-color: #050609; */
   color: white;
   padding: 40px;
   display: flex;
@@ -30,7 +43,7 @@ nav img {
   width: auto;
 }
 
-.chip{
+.chip {
   padding: 5px 15px;
   background-color: #FFFFFF;
   color: #050609;
@@ -42,22 +55,50 @@ nav img {
   font-weight: bold;
   font-size: 16px;
 }
-.hamburger{
+
+.hamburger {
   display: none;
+}
+
+.hero-area {
+  height: 40vh;
+}
+
+
+
+
+.container{
+  z-index: 1;
 }
 
 .hero-area p {
   color: #FFFFFF;
-  width: 600px;
-  font-size: 16px;
+  width: 900px;
+  font-size: 50px;
   padding: 40px;
-  font-weight: 300;
-  line-height: 30px;
+  font-weight: lighter;
+  line-height: 80px;
+  height: 30vh;
+  margin-top: 60px;
+  position: relative;
 }
+
+
+
 
 .hero-area p span {
   font-weight: bold;
+  color: #fff;
+  background-image: linear-gradient(to bottom, #f2f2f2 50%, rgba(242, 242, 242, .2));
+  letter-spacing: -1px;
+  text-shadow: 0 4px 6px rgba(0, 87, 255, .15), 0 -4px 6px rgba(255, 90, 0, .1), 0 0 20px rgba(255, 255, 255, .25);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 60px;
 }
+
+
 
 video {
   width: 100%;
@@ -66,6 +107,9 @@ video {
   object-fit: cover;
 }
 
+.project-section {
+  margin-top: 160px;
+}
 
 .project-section .head {
   color: #FFFFFF;
@@ -112,6 +156,20 @@ video {
 
 .bottom-text {
   color: rgba(205.69, 205.69, 205.69, 0.50);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 34px;
+  word-wrap: break-word;
+  margin: 0;
+  background-color: rgba(26, 26, 26, 0.1);
+  border: 1px rgb(70, 70, 70) solid;
+  padding: 1px .6rem;
+  border-radius: 6px;
+  margin-top: 8px;
+}
+
+.mck-text .mck-head {
+  color: white;
   font-size: 14px;
   font-weight: 700;
   line-height: 34px;
@@ -119,26 +177,17 @@ video {
   margin: 0;
 }
 
-.mck-text .mck-head{
-  color: white; 
-  font-size: 14px;  
-  font-weight: 700; 
+.mck-text .mck-para {
+  color: rgba(205.69, 205.69, 205.69, 0.50);
+  font-size: 14px;
+  font-weight: 700;
   line-height: 34px;
-   word-wrap: break-word;
-   margin: 0;
-}
-
-.mck-text .mck-para{
-  color: rgba(205.69, 205.69, 205.69, 0.50); 
-  font-size: 14px; 
-  font-weight: 700; 
-  line-height: 34px; 
   word-wrap: break-word;
   margin: 0;
 }
 
 
-.above-footer{
+.above-footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -147,34 +196,29 @@ video {
   gap: 16px;
 }
 
-.abvf-head{
-  color: white; 
-  font-size: 16px; 
-  font-weight: 500; 
+.abvf-head {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
   word-wrap: break-word;
   margin: 0;
   line-height: 30px;
 
 }
 
-.black-footer{
+.black-footer {
   background: #121212;
   padding-bottom: 40px;
 }
-.footer-details{
+
+.footer-details {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 
 }
 
-.copyright h6{
-  color: white;
-  font-size: 14px;
-  font-weight: 500;
-  word-wrap: break-word;
- 
-}
-.links h6{
+.copyright h6 {
   color: white;
   font-size: 14px;
   font-weight: 500;
@@ -182,11 +226,19 @@ video {
 
 }
 
-.links{
+.links h6 {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  word-wrap: break-word;
+
+}
+
+.links {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: baseline;
   gap: 10px;
 }
 
@@ -259,11 +311,11 @@ video {
   border-radius: 50%;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #2196F3;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   transform: translateX(26px);
 }
 
@@ -274,3 +326,8 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+.c1 {
+  margin-bottom: 60px;
+}
+
