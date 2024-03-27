@@ -47,7 +47,7 @@ nav img {
   padding: 5px 15px;
   background-color: #FFFFFF;
   color: #050609;
-  border-radius: 20px;
+  border-radius: 5px;
 
 }
 
@@ -330,4 +330,6 @@ input:checked+.slider:before {
 .c1 {
   margin-bottom: 60px;
 }
+
+
 
