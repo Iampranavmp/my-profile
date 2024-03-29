@@ -52,3 +52,24 @@
     
 }
 
+.about-area{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.image-profile{
+    width: 20%;
+}
+.interactive-tape{
+    position: absolute;
+    width: 20%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-60%);
+    bottom: -36px;
+}
+
+.intape{
+    width: 122%;
+    
+}
