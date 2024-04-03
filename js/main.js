@@ -7,8 +7,4 @@ window.onscroll = () => {
 };
 
 
-const modeSwitch = document.getElementById('modeSwitch');
 
-modeSwitch.addEventListener('change', () => {
-    document.body.classList.toggle('dark-mode');
-});

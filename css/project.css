@@ -41,18 +41,104 @@
 .pjt-desc {
     width: 723px;
     color: white;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 40px;
+    line-height: 24px;
     word-wrap: break-word;
+    margin-top: 24px;
 }
 
 .pjt-link{
     color: white;
     margin-bottom: 60px;
+    margin-top: 60px;
 }
 
 .pjt-link a{
     color: white;
     text-decoration: underline;
+}
+
+.deschead{
+    color: white;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    height: 750px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.video-wrapper video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+}
+
+.project-details{
+    margin-top: 100px;
+}
+
+.detail-head-area{
+    color: white;
+}
+.tdp-head h4,p{
+    color: white;
+}
+
+.detail-head-area h4{
+    margin-bottom: 24px ;
+    font-weight: 600;
+}
+
+.detail-head-area p{
+ margin-bottom: 24px;
+ font-size: 14px;
+}
+
+.points .pointlist{
+padding-bottom: 24px;
+font-size: 14px;
+color: rgba(255, 255, 255, 0.50);
+}
+
+.text-cdt h6{
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.text-cdt p{
+    color: rgba(255, 255, 255, 0.50);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+    word-wrap: break-word;
+    margin: 0;
+}
+
+.thedesignprocess{
+    margin-top: 60px;
+}
+
+
+
+.challengebanner{
+    margin-top: 60px;
+}
+
+
+.introduction{
+    margin-top: 60px;
+}
+.intro-head h4{
+    color: white;
+
+}
+
+.intro-head p{
+    margin-top: 24px;
 }
