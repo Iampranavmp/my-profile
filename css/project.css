@@ -142,3 +142,11 @@ color: rgba(255, 255, 255, 0.50);
 .intro-head p{
     margin-top: 24px;
 }
+.pointin h6{
+    color: white;
+}
+
+.pointin p{
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.50);
+}
