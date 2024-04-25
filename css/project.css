@@ -153,12 +153,116 @@ color: rgba(255, 255, 255, 0.50);
 
 .image-areas img{
     width: 100%;
-    border-radius: 24px;
 
 }
 
 .img1{
     width: 100%;
-    border-radius: 14px;
+    border-radius: 0px;
     margin-top: 60px;
+}
+
+.wrapper-image-area{
+    padding: 48px 24px 32px;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);   
+    border-radius: 24px;
+    box-shadow: 0 40px 100px rgba(0, 0, 0, .4);
+}
+
+.screenshots img{
+    border-radius: 8px;
+}
+
+.text-img-wrap{
+    grid-column-gap: 8px;
+    justify-content: flex-end;
+    align-self: stretch;
+    align-items: center;
+    padding-left: 16px;
+    display: flex;
+    padding-top: 16px;
+}
+
+.text-image-caption {
+    grid-column-gap: 4px;
+    color: rgba(242, 242, 242, .25);
+    letter-spacing: .2px;
+    align-self: center;
+    align-items: baseline;
+    font-family: Neue Montreal, sans-serif;
+    font-size: 10px;
+    line-height: 14px;
+    display: flex;
+}
+.text-figure-caption {
+    color: rgba(242, 242, 242, .4);
+    font-weight: 500;
+}
+.chip-medium-type {
+    background-color: rgba(242, 242, 242, .05);
+    border-radius: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 10px;
+    display: flex;
+}
+.text-medium-type {
+    opacity: .4;
+    font-family: JetBrains Mono, sans-serif;
+    font-size: 10px;
+    line-height: 14px;
+    color: white;
+}
+
+.highlights-text-content {
+    grid-row-gap: 24px;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 32px;
+    padding-right: 32px;
+    display: flex;
+}
+
+.chip-special-overline {
+    grid-column-gap: 8px;
+    grid-row-gap: 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+.icon-highlightreel {
+    width: 150px;
+}
+.highlights-text-content {
+    grid-row-gap: 24px;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 32px;
+    padding-right: 32px;
+    display: flex;
+}   
+
+
+.highlight-text{
+color: rgba(242, 242, 242, .4);
+text-align: left;
+letter-spacing: 1.5px;
+margin-top: 1px;
+
+font-size: 11px;
+font-weight: 500;
+line-height: 19px;
+}
+
+.text-callout {
+    text-align: center;
+    letter-spacing: .2px;
+    font-family: Neue Montreal, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 140%;
+    color: white;
 }
