@@ -266,3 +266,16 @@ line-height: 19px;
     line-height: 140%;
     color: white;
 }
+
+.mob-divs{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mob-divs .screenshots{
+    flex: 1 1 50%; /* Each item takes up 50% of the container's width */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    box-sizing: border-box;
+    padding: 10px;
+}
